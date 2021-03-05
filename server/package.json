@@ -1,9 +1,19 @@
 {
+  "name": "spotify-web-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
   "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7"
+    "express": "^4.17.1"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server.js --exec babel-node --presets babel-preset-env"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^2.0.7"
   }
 }
