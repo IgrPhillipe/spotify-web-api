@@ -1,9 +1,9 @@
-import express from 'express';
+import express, { Express } from 'express';
 import requestHandler from './helpers/requestHandler';
 
-import routes from './routes/UserRoutes';
+import routes from './routes/index';
 
-const app = express();
+const app: Express = express();
 
 app.use(express.json());
 

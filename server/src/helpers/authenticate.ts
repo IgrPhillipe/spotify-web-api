@@ -1,7 +1,7 @@
 import { Response } from 'express';
 
-const authenticate = (res: Response) => {
-  res.redirect('http://localhost:3000/authenticate');
+const authenticate = async (res: Response, url: string) => {
+  res.redirect(url);
 };
 
 export default authenticate;
